@@ -6,4 +6,5 @@ This work involves applying the GOST to the an independently annotated corpus [C
 The evaluation process is a preceeded by a set of pre-processing steps implemented in the `eval_gost_api.py` python script (included) and described below.
 
 ## Preparing the CRAFT data
-This involves extracting the necessary annotated data from the original xml format (see the  which is then prepared and presented in plain text format for the  
+This involves extracting the necessary annotated data from the original xml format (see one of the [craft_GO_BP_knowtator](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_GO_BP_knowtator) files) which are then prepared and presented in plain text format for the actual evaluation process.
+
