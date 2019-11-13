@@ -1,0 +1,398 @@
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0042148	strand invasion
+GO:0007126	meiotic nuclear division
+GO:0016265	death
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0016265	death
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0006260	DNA replication
+GO:0000725	recombinational repair
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007128	meiotic prophase I
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0000237	leptotene
+GO:0000239	pachytene
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0000238	zygotene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000237	leptotene
+GO:0000239	pachytene
+GO:0000237	leptotene
+GO:0007283	spermatogenesis
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0000238	zygotene
+GO:0000238	zygotene
+GO:0007283	spermatogenesis
+GO:0006281	DNA repair
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0030261	chromosome condensation
+GO:0051324	prophase
+GO:0007129	synapsis
+GO:0000238	zygotene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000077	DNA damage checkpoint
+GO:0006281	DNA repair
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0006281	DNA repair
+GO:0000240	diplotene
+GO:0006281	DNA repair
+GO:0000239	pachytene
+GO:0006298	mismatch repair
+GO:0000239	pachytene
+GO:0006302	double-strand break repair
+GO:0000240	diplotene
+GO:0000725	recombinational repair
+GO:0000725	recombinational repair
+GO:0000239	pachytene
+GO:0051323	metaphase
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0006915	apoptotic process
+GO:0000239	pachytene
+GO:0051323	metaphase
+GO:0000239	pachytene
+GO:0016265	death
+GO:0006915	apoptotic process
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0031577	spindle checkpoint
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007127	meiosis I
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0007283	spermatogenesis
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0048477	oogenesis
+GO:0007129	synapsis
+GO:0007127	meiosis I
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0000239	pachytene
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0000725	recombinational repair
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0008219	cell death
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0016265	death
+GO:0042148	strand invasion
+GO:0007129	synapsis
+GO:0051323	metaphase
+GO:0051323	metaphase
+GO:0051598	meiotic recombination checkpoint
+GO:0051598	meiotic recombination checkpoint
+GO:0000075	cell cycle checkpoint
+GO:0000075	cell cycle checkpoint
+GO:0065007	biological regulation
+GO:0007129	synapsis
+GO:0007132	meiotic metaphase I
+GO:0000239	pachytene
+GO:0007567	parturition
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0033313	meiotic cell cycle checkpoint
+GO:0051598	meiotic recombination checkpoint
+GO:0006281	DNA repair
+GO:0000075	cell cycle checkpoint
+GO:0033313	meiotic cell cycle checkpoint
+GO:0065007	biological regulation
+GO:0006281	DNA repair
+GO:0007129	synapsis
+GO:0033313	meiotic cell cycle checkpoint
+GO:0000075	cell cycle checkpoint
+GO:0007567	parturition
+GO:0007129	synapsis
+GO:0000075	cell cycle checkpoint
+GO:0007276	gamete generation
+GO:0000237	leptotene
+GO:0007114	cell budding
+GO:0006281	DNA repair
+GO:0006281	DNA repair
+GO:0000075	cell cycle checkpoint
+GO:0065007	biological regulation
+GO:0006281	DNA repair
+GO:0007129	synapsis
+GO:0051598	meiotic recombination checkpoint
+GO:0051598	meiotic recombination checkpoint
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0007067	mitotic nuclear division
+GO:0051598	meiotic recombination checkpoint
+GO:0007126	meiotic nuclear division
+GO:0042770	signal transduction in response to DNA damage
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0051598	meiotic recombination checkpoint
+GO:0065007	biological regulation
+GO:0006302	double-strand break repair
+GO:0000239	pachytene
+GO:0008152	metabolic process
+GO:0006302	double-strand break repair
+GO:0007126	meiotic nuclear division
+GO:0051598	meiotic recombination checkpoint
+GO:0006302	double-strand break repair
+GO:0051598	meiotic recombination checkpoint
+GO:0007129	synapsis
+GO:0000075	cell cycle checkpoint
+GO:0006302	double-strand break repair
+GO:0051598	meiotic recombination checkpoint
+GO:0000075	cell cycle checkpoint
+GO:0007126	meiotic nuclear division
+GO:0065007	biological regulation
+GO:0051598	meiotic recombination checkpoint
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0006302	double-strand break repair
+GO:0035825	reciprocal DNA recombination
+GO:0010467	gene expression
+GO:0000237	leptotene
+GO:0006302	double-strand break repair
+GO:0000238	zygotene
+GO:0000725	recombinational repair
+GO:0010467	gene expression
+GO:0006281	DNA repair
+GO:0010467	gene expression
+GO:0006281	DNA repair
+GO:0010467	gene expression
+GO:0008380	RNA splicing
+GO:0000239	pachytene
+GO:0016265	death
+GO:0010467	gene expression
+GO:0000238	zygotene
+GO:0008380	RNA splicing
+GO:0010467	gene expression
+GO:0007126	meiotic nuclear division
+GO:0009790	embryo development
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0000237	leptotene
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0000237	leptotene
+GO:0007276	gamete generation
+GO:0030435	sporulation resulting in formation of a cellular spore
+GO:0007283	spermatogenesis
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0007567	parturition
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0000237	leptotene
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0007129	synapsis
+GO:0000238	zygotene
+GO:0006302	double-strand break repair
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0000077	DNA damage checkpoint
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0000239	pachytene
+GO:0000239	pachytene
+GO:0007129	synapsis
+GO:0006342	chromatin silencing
+GO:0006342	chromatin silencing
+GO:0006302	double-strand break repair
+GO:0000239	pachytene
+GO:0006281	DNA repair
+GO:0007132	meiotic metaphase I
+GO:0007132	meiotic metaphase I
+GO:0007128	meiotic prophase I
+GO:0007132	meiotic metaphase I
+GO:0006302	double-strand break repair
+GO:0006281	DNA repair
+GO:0000239	pachytene
+GO:0000238	zygotene
+GO:0007126	meiotic nuclear division
+GO:0000237	leptotene
+GO:0007126	meiotic nuclear division
+GO:0065007	biological regulation
+GO:0007129	synapsis
+GO:0006281	DNA repair
+GO:0007132	meiotic metaphase I
+GO:0035825	reciprocal DNA recombination
+GO:0000237	leptotene
+GO:0006281	DNA repair
+GO:0000240	diplotene
+GO:0007129	synapsis
+GO:0007132	meiotic metaphase I
+GO:0065007	biological regulation
+GO:0006302	double-strand break repair
+GO:0006281	DNA repair
+GO:0007129	synapsis
+GO:0035825	reciprocal DNA recombination
+GO:0007126	meiotic nuclear division
+GO:0035825	reciprocal DNA recombination
+GO:0007126	meiotic nuclear division
+GO:0098762	meiotic cell cycle phase
+GO:0007132	meiotic metaphase I
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0000239	pachytene
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0006302	double-strand break repair
+GO:0007567	parturition
+GO:0000238	zygotene
+GO:0007567	parturition
+GO:0051598	meiotic recombination checkpoint
+GO:0007567	parturition
+GO:0065007	biological regulation
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007126	meiotic nuclear division
+GO:0006302	double-strand break repair
+GO:0006281	DNA repair
+GO:0000075	cell cycle checkpoint
+GO:0007567	parturition
+GO:0033313	meiotic cell cycle checkpoint
+GO:0007129	synapsis
+GO:0000077	DNA damage checkpoint
+GO:0007129	synapsis
+GO:0000075	cell cycle checkpoint
+GO:0007567	parturition
+GO:0006302	double-strand break repair
+GO:0035825	reciprocal DNA recombination
+GO:0000239	pachytene
+GO:0035825	reciprocal DNA recombination
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0051598	meiotic recombination checkpoint
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0007114	cell budding
+GO:0007126	meiotic nuclear division
+GO:0006302	double-strand break repair
+GO:0006281	DNA repair
+GO:0007126	meiotic nuclear division
+GO:0007129	synapsis
+GO:0065007	biological regulation
+GO:0070194	synaptonemal complex disassembly
+GO:0032984	macromolecular complex disassembly
+GO:0035825	reciprocal DNA recombination
+GO:0007126	meiotic nuclear division
+GO:0035825	reciprocal DNA recombination
+GO:0000075	cell cycle checkpoint
+GO:0035825	reciprocal DNA recombination
+GO:0006302	double-strand break repair
+GO:0007126	meiotic nuclear division
+GO:0051598	meiotic recombination checkpoint
+GO:0007129	synapsis
+GO:0043241	protein complex disassembly
+GO:0007129	synapsis
+GO:0032986	protein-DNA complex disassembly
+GO:0007129	synapsis
+GO:0000075	cell cycle checkpoint
+GO:0065007	biological regulation
+GO:0007132	meiotic metaphase I
+GO:0035825	reciprocal DNA recombination
+GO:0051598	meiotic recombination checkpoint
+GO:0007129	synapsis
+GO:0000077	DNA damage checkpoint
+GO:0065007	biological regulation
+GO:0007126	meiotic nuclear division
+GO:0035825	reciprocal DNA recombination
+GO:0000239	pachytene
+GO:0075317	ascus development
+GO:0000239	pachytene
+GO:0035825	reciprocal DNA recombination
+GO:0000075	cell cycle checkpoint
+GO:0007131	reciprocal meiotic recombination
+GO:0031507	heterochromatin assembly
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0006281	DNA repair
+GO:0031507	heterochromatin assembly
+GO:0035825	reciprocal DNA recombination
+GO:0006342	chromatin silencing
+GO:0007129	synapsis
+GO:0007114	cell budding
+GO:0098762	meiotic cell cycle phase
+GO:0000075	cell cycle checkpoint
+GO:0035825	reciprocal DNA recombination
+GO:0000075	cell cycle checkpoint
+GO:0006281	DNA repair
+GO:0033313	meiotic cell cycle checkpoint
+GO:0001171	reverse transcription
+GO:0007114	cell budding
+GO:0000075	cell cycle checkpoint
+GO:0000075	cell cycle checkpoint
+GO:0035825	reciprocal DNA recombination
+GO:0000075	cell cycle checkpoint
+GO:0035825	reciprocal DNA recombination
+GO:0000725	recombinational repair
+GO:0000075	cell cycle checkpoint
+GO:0016458	gene silencing
+GO:0006302	double-strand break repair
+GO:0051598	meiotic recombination checkpoint
+GO:0033313	meiotic cell cycle checkpoint
+GO:0051598	meiotic recombination checkpoint
+GO:0065007	biological regulation
+GO:0007132	meiotic metaphase I
+GO:0000239	pachytene
+GO:0007067	mitotic nuclear division
+GO:0051598	meiotic recombination checkpoint
+GO:0007129	synapsis
+GO:0007126	meiotic nuclear division
+GO:0006281	DNA repair
+GO:0007132	meiotic metaphase I
+GO:0007126	meiotic nuclear division
+GO:0006342	chromatin silencing

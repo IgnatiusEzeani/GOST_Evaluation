@@ -1,0 +1,266 @@
+GO:0016265	death
+GO:0007049	cell cycle
+GO:0016265	death
+GO:0007049	cell cycle
+GO:0051716	cellular response to stimulus
+GO:0007067	mitotic nuclear division
+GO:0007049	cell cycle
+GO:0007067	mitotic nuclear division
+GO:0007049	cell cycle
+GO:0065007	biological regulation
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0016265	death
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0022008	neurogenesis
+GO:0008219	cell death
+GO:0008219	cell death
+GO:0006915	apoptotic process
+GO:0007067	mitotic nuclear division
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0007049	cell cycle
+GO:0008283	cell proliferation
+GO:0007067	mitotic nuclear division
+GO:0007067	mitotic nuclear division
+GO:0008219	cell death
+GO:0008219	cell death
+GO:0007049	cell cycle
+GO:0060041	retina development in camera-type eye
+GO:0007067	mitotic nuclear division
+GO:0065007	biological regulation
+GO:0008283	cell proliferation
+GO:0016265	death
+GO:0065007	biological regulation
+GO:0051320	S phase
+GO:0010467	gene expression
+GO:0016458	gene silencing
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0009653	anatomical structure morphogenesis
+GO:0030154	cell differentiation
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0044838	cell quiescence
+GO:0065007	biological regulation
+GO:0044838	cell quiescence
+GO:0008283	cell proliferation
+GO:0070997	neuron death
+GO:0010467	gene expression
+GO:0044838	cell quiescence
+GO:0051320	S phase
+GO:0044838	cell quiescence
+GO:0065007	biological regulation
+GO:0007067	mitotic nuclear division
+GO:0071897	DNA biosynthetic process
+GO:0065007	biological regulation
+GO:0044838	cell quiescence
+GO:0065007	biological regulation
+GO:0044838	cell quiescence
+GO:0065007	biological regulation
+GO:0007567	parturition
+GO:0065007	biological regulation
+GO:1990603	dark adaptation
+GO:0051320	S phase
+GO:1990603	dark adaptation
+GO:0008219	cell death
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:1990603	dark adaptation
+GO:0065007	biological regulation
+GO:0097473	retinal rod cell apoptotic process
+GO:0065007	biological regulation
+GO:0036367	light adaption
+GO:0001775	cell activation
+GO:0007567	parturition
+GO:0008283	cell proliferation
+GO:0036367	light adaption
+GO:0008283	cell proliferation
+GO:0036367	light adaption
+GO:0060041	retina development in camera-type eye
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0007049	cell cycle
+GO:0010467	gene expression
+GO:0006915	apoptotic process
+GO:0044838	cell quiescence
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0044838	cell quiescence
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:1990603	dark adaptation
+GO:0010467	gene expression
+GO:1990603	dark adaptation
+GO:0007067	mitotic nuclear division
+GO:0001171	reverse transcription
+GO:0065007	biological regulation
+GO:1990603	dark adaptation
+GO:0010467	gene expression
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:1990603	dark adaptation
+GO:0010467	gene expression
+GO:0036367	light adaption
+GO:0008283	cell proliferation
+GO:0036367	light adaption
+GO:0007067	mitotic nuclear division
+GO:0036367	light adaption
+GO:0010467	gene expression
+GO:0071897	DNA biosynthetic process
+GO:0010467	gene expression
+GO:1990603	dark adaptation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0007567	parturition
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0000279	M phase
+GO:0060041	retina development in camera-type eye
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0051726	regulation of cell cycle
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0042551	neuron maturation
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0048468	cell development
+GO:0048468	cell development
+GO:0065007	biological regulation
+GO:0046549	retinal cone cell development
+GO:0065007	biological regulation
+GO:0045595	regulation of cell differentiation
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0008283	cell proliferation
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0008283	cell proliferation
+GO:0007049	cell cycle
+GO:0065007	biological regulation
+GO:0006915	apoptotic process
+GO:0051320	S phase
+GO:0016265	death
+GO:0007049	cell cycle
+GO:0065007	biological regulation
+GO:0006412	translation
+GO:0010467	gene expression
+GO:0006915	apoptotic process
+GO:0051301	cell division
+GO:0030154	cell differentiation
+GO:0065007	biological regulation
+GO:0016265	death
+GO:0010467	gene expression
+GO:0007602	phototransduction
+GO:0016265	death
+GO:0051320	S phase
+GO:0008219	cell death
+GO:0010467	gene expression
+GO:0007049	cell cycle
+GO:0065007	biological regulation
+GO:0022008	neurogenesis
+GO:0065007	biological regulation
+GO:0007049	cell cycle
+GO:0000279	M phase
+GO:0016265	death
+GO:0051320	S phase
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0007049	cell cycle
+GO:0051320	S phase
+GO:0006915	apoptotic process
+GO:0007049	cell cycle
+GO:0016458	gene silencing
+GO:0051320	S phase
+GO:0006915	apoptotic process
+GO:0000279	M phase
+GO:0007049	cell cycle
+GO:0007567	parturition
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0016265	death
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0016265	death
+GO:0022008	neurogenesis
+GO:0016265	death
+GO:0016265	death
+GO:0016265	death
+GO:0007067	mitotic nuclear division
+GO:0006915	apoptotic process
+GO:0016265	death
+GO:0051301	cell division
+GO:0006915	apoptotic process
+GO:0007049	cell cycle
+GO:0008219	cell death
+GO:0007049	cell cycle
+GO:0006915	apoptotic process
+GO:0016265	death
+GO:0016265	death
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0007067	mitotic nuclear division
+GO:0006915	apoptotic process
+GO:0006915	apoptotic process
+GO:0016265	death
+GO:0007067	mitotic nuclear division
+GO:0007067	mitotic nuclear division
+GO:0007067	mitotic nuclear division
+GO:0008219	cell death
+GO:0007049	cell cycle
+GO:0007067	mitotic nuclear division
+GO:0008219	cell death
+GO:0051301	cell division
+GO:0006915	apoptotic process
+GO:0007049	cell cycle
+GO:0007067	mitotic nuclear division
+GO:0008219	cell death
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0007049	cell cycle
+GO:0016265	death
+GO:0016265	death
+GO:0051301	cell division
+GO:0016265	death
+GO:0016265	death
+GO:0016265	death
+GO:0016265	death
+GO:0048469	cell maturation
+GO:0006915	apoptotic process
+GO:0022008	neurogenesis
+GO:0007049	cell cycle
+GO:0006915	apoptotic process
+GO:0051301	cell division

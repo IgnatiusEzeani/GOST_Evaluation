@@ -1,0 +1,216 @@
+GO:0030154	cell differentiation
+GO:0030154	cell differentiation
+GO:0030097	hemopoiesis
+GO:0048468	cell development
+GO:0060215	primitive hemopoiesis
+GO:0060216	definitive hemopoiesis
+GO:0060215	primitive hemopoiesis
+GO:0060216	definitive hemopoiesis
+GO:0060216	definitive hemopoiesis
+GO:0000184	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay
+GO:0060216	definitive hemopoiesis
+GO:0060215	primitive hemopoiesis
+GO:0060216	definitive hemopoiesis
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0060318	definitive erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0060319	primitive erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0060319	primitive erythrocyte differentiation
+GO:0035162	embryonic hemopoiesis
+GO:0030218	erythrocyte differentiation
+GO:0010467	gene expression
+GO:0030218	erythrocyte differentiation
+GO:0006915	apoptotic process
+GO:0060318	definitive erythrocyte differentiation
+GO:0010467	gene expression
+GO:0030218	erythrocyte differentiation
+GO:0010467	gene expression
+GO:0060318	definitive erythrocyte differentiation
+GO:0010467	gene expression
+GO:0030218	erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0030218	erythrocyte differentiation
+GO:0048468	cell development
+GO:0060319	primitive erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0008283	cell proliferation
+GO:0048469	cell maturation
+GO:0030218	erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0030218	erythrocyte differentiation
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0030097	hemopoiesis
+GO:0006338	chromatin remodeling
+GO:0009790	embryo development
+GO:0030097	hemopoiesis
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0036268	swimming
+GO:0030097	hemopoiesis
+GO:0035162	embryonic hemopoiesis
+GO:0035162	embryonic hemopoiesis
+GO:0010467	gene expression
+GO:0006915	apoptotic process
+GO:0048468	cell development
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0012501	programmed cell death
+GO:0009790	embryo development
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0009790	embryo development
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0014031	mesenchymal cell development
+GO:0030097	hemopoiesis
+GO:0008219	cell death
+GO:0010467	gene expression
+GO:0006412	translation
+GO:0010467	gene expression
+GO:0007126	meiotic nuclear division
+GO:0006412	translation
+GO:0010467	gene expression
+GO:0007369	gastrulation
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0040007	growth
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0048821	erythrocyte development
+GO:0030097	hemopoiesis
+GO:0016265	death
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0006412	translation
+GO:0030154	cell differentiation
+GO:0065007	biological regulation
+GO:0006281	DNA repair
+GO:0048469	cell maturation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0009790	embryo development
+GO:0006402	mRNA catabolic process
+GO:0010467	gene expression
+GO:0035162	embryonic hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0006915	apoptotic process
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0012501	programmed cell death
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0006915	apoptotic process
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0048513	animal organ development
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0010468	regulation of gene expression
+GO:0065007	biological regulation
+GO:0065007	biological regulation
+GO:0030097	hemopoiesis
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0030154	cell differentiation
+GO:0035162	embryonic hemopoiesis
+GO:0048468	cell development
+GO:0007618	mating
+GO:0006915	apoptotic process
+GO:0007566	embryo implantation
+GO:0006915	apoptotic process
+GO:0009566	fertilization
+GO:0008283	cell proliferation
+GO:0030154	cell differentiation
+GO:0010467	gene expression
+GO:0035162	embryonic hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0097152	mesenchymal cell apoptotic process
+GO:0010467	gene expression
+GO:0090504	epiboly
+GO:0010467	gene expression
+GO:0009566	fertilization
+GO:0010467	gene expression
+GO:0009566	fertilization
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0065007	biological regulation
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0035162	embryonic hemopoiesis
+GO:0008283	cell proliferation
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0030097	hemopoiesis
+GO:0010467	gene expression
+GO:0010467	gene expression
+GO:0030097	hemopoiesis
+GO:0048568	embryonic organ development
