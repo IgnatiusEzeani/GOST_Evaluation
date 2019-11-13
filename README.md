@@ -6,7 +6,11 @@ This work involves applying the GOST to the an independently annotated corpus [C
 The evaluation process is a preceeded by a set of pre-processing steps implemented in the `eval_gost_api.py` python script (included) and described below.
 
 ## Preparing the CRAFT data
-This involves extracting the necessary annotated data from the original xml format (see one of the [craft_GO_BP_knowtator](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_GO_BP_knowtator) files) which are then prepared and presented in plain text format (examples are in the [craft_tagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_tagged) folder) for the actual evaluation process. Each  instance of the data contains a _gene ontology ID_ followed by a word of phrase `<GOXXXXXXX> <word|phrase>`. These are similar to the [craft_untagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_untagged) files which differ only in their not having the gene ontology IDs
+This involves extracting the necessary annotated data from the original xml format (see one of the [craft_GO_BP_knowtator](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_GO_BP_knowtator) files) which are then prepared and presented in plain text format (examples are in the [craft_tagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_tagged) folder) for the actual evaluation process. Each  instance of the data contains a _gene ontology ID_ followed by a word or phrase e.g.:
+
+- `<GOXXXXXXX> <word|phrase>`
+  
+These are similar to the [craft_untagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_untagged) files which differ only in their not having the gene ontology IDs
 
 ## Data statistics
 
