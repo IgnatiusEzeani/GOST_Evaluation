@@ -23,7 +23,7 @@ To properly evaluate GOST on the CRAFT, we removed all non-word output tokens as
 ## Evaluation Methods
 **I think I need suggestions here!!!**: At the moment the evaluation method passes each instance from the extracted untagged gold dataset ([craft_untagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_untagged)) and compares the returned output with the expected output in the tagged version ([craft_tagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_tagged)).
 
-However, remember that GOST will return a set of `GO id`s for each word (non-words or words without ) of the text given. For example, if we pass `brain` to GOST we will get something like:
+However, remember that GOST will return a set of `GO id`s for each word (non-words or words without `GO id` tags are excluded) of the text given. For example, if we pass `brain` to GOST we will get something like:
 
 ```
 brain	GO:0048856 GO:0048513 GO:0032502 GO:0007420 GO:0032502 GO:0044767 GO:0008150 GO:0008150 GO:0044699
