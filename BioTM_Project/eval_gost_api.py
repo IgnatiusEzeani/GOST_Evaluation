@@ -140,3 +140,25 @@ tops = [1, 5, 10, 0]
 # ('GO:0044767', 116)]
 # total count = 7997
 # Unique GO_ids = 1167
+
+#Good for the analysis!
+#total
+#Out[57]: dict_values([1])
+#
+#for GO, C in craft_dict.items():
+#    total = sum(C.values())    
+#    
+#
+#total
+#Out[59]: 1
+#
+#total=0
+#for GO, C in craft_dict.items():
+#    total += sum(C.values())  
+#    
+#
+#total
+#Out[61]: 12962
+#
+#sum([sum(C.values()) for GO, C in craft_dict.items()])
+#Out[62]: 12962
