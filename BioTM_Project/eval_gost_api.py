@@ -7,7 +7,7 @@ Created on Mon Nov 11 12:37:14 2019
 import os, glob, subprocess
 import xml.etree.ElementTree as ET
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from collections import Counter
+from collections import Counter, defaultdict
 
 def extract_xml(xml_tagged_dir, craft_tagged_dir, craft_untagged_dir):
     if not os.path.exists(craft_tagged_dir):
@@ -58,16 +58,24 @@ def gost_tag_craft(api_prefix, api_url, gost_tagged_dir):
             for word in result:
                 gost_file.write(f'{word}\t{" ".join(result[word])}\n')
 
-def read_tagged_files(folder):
-    tag_dict = {}
-    
+def read_tagged_files(folder, file_type='craft'):
+    tag_dict = defaultdict(Counter)
     for f in os.listdir(folder):
         with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
             for entry in f:
                 details = entry.strip().split()
-                if not details[0] in tag_dict:
-                    tag_dict[details[0]] = details[1:]
+                tag_dict[details[0]].update([" ".join(details[1:])])
     return tag_dict
+
+#def read_tagged_files(folder, file_type = 'gost'):
+#    tag_dict = {}
+#    for f in os.listdir(folder):
+#        with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
+#            for entry in f:
+#                details = entry.strip().split()
+#                if not details[0] in tag_dict:
+#                    tag_dict[details[0]] = details[1:]
+#    return tag_dict
 
 def evaluate(craft_dict, gost_dict, top=0):
     print(f"\n{'-'*10} Top {top} {'-'*10}")
@@ -92,13 +100,13 @@ def evaluate(craft_dict, gost_dict, top=0):
             else: pred.append('GO:0008150')
     return gold, pred
 
-def show_results(top):
-    golds, preds = evaluate(craft_dict, gost_dict, top)
-    print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
-    print(f"{'Precision:':>10s} {precision_score(golds, preds, average='micro')*100:.2f}%")
-    print(f"{'Recall:':>10s} {recall_score(golds, preds, average='micro')*100:.2f}%")
-    print(f"{'F1:':>10s} {f1_score(golds, preds, average='micro')*100:.2f}%")
-    
+#def show_results(top):
+#    golds, preds = evaluate(craft_dict, gost_dict, top)
+#    print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
+#    print(f"{'Precision:':>10s} {precision_score(golds, preds, average='micro')*100:.2f}%")
+#    print(f"{'Recall:':>10s} {recall_score(golds, preds, average='micro')*100:.2f}%")
+#    print(f"{'F1:':>10s} {f1_score(golds, preds, average='micro')*100:.2f}%")
+#    
 
 craft_xml = "craft_GO_BP_knowtator"
 craft_tagged = "craft_tagged"
@@ -112,12 +120,12 @@ api_url = "http://ucrel-api.lancaster.ac.uk/cgi-bin/gost.pl"
 #gost_tag_craft(api_prefix, api_url, gost_tagged)
 
 craft_dict = read_tagged_files(craft_tagged)
-gost_dict = read_tagged_files(gost_tagged)
+#gost_dict = read_tagged_files(gost_tagged)
 
 tops = [1, 5, 10, 0]
 
-for top in tops:
-    show_results(top)
+#for top in tops:
+#    show_results(top)
 
 # Top 10 most predicted GO_ids
 #[('GO:0008150', 1041),
