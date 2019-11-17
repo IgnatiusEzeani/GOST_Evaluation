@@ -12,8 +12,13 @@ This involves extracting the necessary annotated data from the original xml form
   
 These are similar to the [craft_untagged](https://github.com/IgnatiusEzeani/GOST_Evaluation/tree/master/BioTM_Project/craft_untagged) files which differ only in their not having the gene ontology IDs
 
-## Data statistics and analysis
-I will be including this soon...
+## CRAFT Data statistics and analysis
+
+| ------------- |:--------:|
+| No of files   | 97       |
+| No of entries | 12,262   |
+| Unique `GO ids`| 721     |
+
 
 ## Calling the GOST API and Cleaning the tagging results
 We made the GOST API call with the extracted annotated data in the `craft_untagged` folder. When the GOST API is called with a text input, it returns a set of possible tags (gene ontology IDs or semantic tags) for each of the tokens (words, digits and punctuations) in the text. Although, there are phrases (multi-words) among the biomedical terms that were included in the USAS semantic lexicon.
@@ -88,5 +93,3 @@ Yes, we could do that as well but it is not clear to me how we intend to evaluat
 I guess we did this because we wanted to directly compare the GOST output with the pre-extracted CRAFT dataset entries.
 
 Anyway, something may strike me in the morning but for now, I need ideas please..
-
-(Forgive any typos...) 
