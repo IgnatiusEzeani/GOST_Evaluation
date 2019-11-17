@@ -14,6 +14,7 @@ These are similar to the [craft_untagged](https://github.com/IgnatiusEzeani/GOST
 
 ## CRAFT Data statistics and analysis
 
+| Test1 |Test2|
 | ------------- |:--------:|
 | No of files   | 97       |
 | No of entries | 12,262   |
