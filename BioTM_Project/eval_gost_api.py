@@ -6,6 +6,7 @@ Created on Mon Nov 11 12:37:14 2019
 """
 import os, glob, subprocess
 import xml.etree.ElementTree as ET
+import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from collections import Counter, defaultdict
 
@@ -58,56 +59,69 @@ def gost_tag_craft(api_prefix, api_url, gost_tagged_dir):
             for word in result:
                 gost_file.write(f'{word}\t{" ".join(result[word])}\n')
 
-def read_tagged_files(folder, file_type='craft'):
-    tag_dict = defaultdict(Counter)
-    for f in os.listdir(folder):
-        with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
-            for entry in f:
-                details = entry.strip().split()
-                tag_dict[details[0]].update([" ".join(details[1:])])
+def read_tagged_files(folder, file_type='gost'):
+    if file_type=='craft':
+        tag_dict = defaultdict(Counter)
+        for f in os.listdir(folder):
+            with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
+                for entry in f:
+                    details = entry.strip().split()
+                    tag_dict[details[0]].update([" ".join(details[1:])])
+    else:
+        tag_dict = {}
+        for f in os.listdir(folder):
+            with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
+                for entry in f:
+                    details = entry.strip().split()
+                    if not details[0] in tag_dict:
+                        tag_dict[details[0]] = details[1:]
     return tag_dict
 
-#def read_tagged_files(folder, file_type = 'gost'):
-#    tag_dict = {}
-#    for f in os.listdir(folder):
-#        with open(f'{folder}/{f}', 'r', encoding='utf8') as f:
-#            for entry in f:
-#                details = entry.strip().split()
-#                if not details[0] in tag_dict:
-#                    tag_dict[details[0]] = details[1:]
-#    return tag_dict
-
-def evaluate(craft_dict, gost_dict, top=0):
-    print(f"\n{'-'*10} Top {top} {'-'*10}")
-    gold, pred = [],[]
-    for go_id, words in craft_dict.items():
-        gold.append(go_id)
+def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_default=False):
+    print(f"\n{'-'*5} Top {top if top else 'All' } {'-'*5}")
+    gold, pred, errors = [],[], []
+    for go_id, concepts in craft_dict.items():
         gost_go_ids = []
-        if top and len(words)>1:
-            for word in words:
-                if word in gost_dict: gost_go_ids.append(gost_dict[word])
-            if len(gost_go_ids)>1: 
-                zipped = list(zip(gost_go_ids[0], gost_go_ids[1]))[:top]
-            else: zipped = gost_go_ids
-            if any(go_id in l for l in zipped):
-                pred.append(go_id)
-            else: pred.append('GO:0008150')
+        if top:
+            for phrase, count in concepts.items():
+                gold.extend([go_id]*count)
+                
+                for word in phrase.split():
+                    if word in gost_dict: gost_go_ids.append(gost_dict[word])
+                
+                if len(gost_go_ids)>1: zipped = list(zip(gost_go_ids[0], gost_go_ids[1]))[:top]
+                else: zipped = gost_go_ids
+                    
+                if any(go_id in l for l in zipped):
+                    pred.extend([go_id]*count)
+                else:
+                    pred.extend([default_goid]*count)
+                    errors.append((phrase, go_id, default_goid, count))
         else:
-            for word in words:
-                if word in gost_dict:
-                    gost_go_ids.extend(gost_dict[word])
-            if go_id in set(gost_go_ids): pred.append(go_id)
-            else: pred.append('GO:0008150')
-    return gold, pred
+            for phrase, count in concepts.items():
+                gold.extend([go_id]*count)
+                for word in phrase.split():
+                    if word in gost_dict:
+                        gost_go_ids.extend(gost_dict[word])
+                if go_id in set(gost_go_ids): pred.extend([go_id]*count)
+                else:
+                    pred.extend([default_goid]*count)
+                    errors.append((phrase, go_id, default_goid, count))
+    return gold, pred, errors
 
-#def show_results(top):
-#    golds, preds = evaluate(craft_dict, gost_dict, top)
-#    print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
-#    print(f"{'Precision:':>10s} {precision_score(golds, preds, average='micro')*100:.2f}%")
-#    print(f"{'Recall:':>10s} {recall_score(golds, preds, average='micro')*100:.2f}%")
-#    print(f"{'F1:':>10s} {f1_score(golds, preds, average='micro')*100:.2f}%")
-#    
+def show_stats(craft_dict):
+#    plt.plot([1, 2, 3, 4])
+#    plt.ylabel('some numbers')
+#    plt.show()
+    pass
 
+def show_results(top):
+    golds, preds, errors = evaluate(craft_dict, gost_dict, top)
+    print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
+    print(f"{'Precision:':>10s} {precision_score(golds, preds, average='macro')*100:.2f}%")
+    print(f"{'Recall:':>10s} {recall_score(golds, preds, average='macro')*100:.2f}%")
+    print(f"{'F1:':>10s} {f1_score(golds, preds, average='macro')*100:.2f}%")
+    return errors
 craft_xml = "craft_GO_BP_knowtator"
 craft_tagged = "craft_tagged"
 craft_untagged = "craft_untagged"
@@ -119,46 +133,11 @@ api_url = "http://ucrel-api.lancaster.ac.uk/cgi-bin/gost.pl"
 #extract_xml(craft_xml, craft_tagged, craft_untagged)
 #gost_tag_craft(api_prefix, api_url, gost_tagged)
 
-craft_dict = read_tagged_files(craft_tagged)
-#gost_dict = read_tagged_files(gost_tagged)
+craft_dict = read_tagged_files(craft_tagged, 'craft')
+gost_dict = read_tagged_files(gost_tagged)
 
-tops = [1, 5, 10, 0]
+tops = [1, 5, 10, 15, 0]
 
-#for top in tops:
-#    show_results(top)
-
-# Top 10 most predicted GO_ids
-#[('GO:0008150', 1041),
-# ('GO:0009987', 362),
-# ('GO:0044699', 334),
-# ('GO:0008152', 260),
-# ('GO:0032502', 203),
-# ('GO:0071704', 162),
-# ('GO:0044237', 149),
-# ('GO:0051179', 137),
-# ('GO:0044763', 133),
-# ('GO:0044767', 116)]
-# total count = 7997
-# Unique GO_ids = 1167
-
-#Good for the analysis!
-#total
-#Out[57]: dict_values([1])
-#
-#for GO, C in craft_dict.items():
-#    total = sum(C.values())    
-#    
-#
-#total
-#Out[59]: 1
-#
-#total=0
-#for GO, C in craft_dict.items():
-#    total += sum(C.values())  
-#    
-#
-#total
-#Out[61]: 12962
-#
-#sum([sum(C.values()) for GO, C in craft_dict.items()])
-#Out[62]: 12962
+error_dict={}
+for top in tops:
+    error_dict[top] = show_results(top)
