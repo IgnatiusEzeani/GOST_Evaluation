@@ -136,59 +136,9 @@ api_url = "http://ucrel-api.lancaster.ac.uk/cgi-bin/gost.pl"
 craft_dict = read_tagged_files(craft_tagged, 'craft')
 gost_dict = read_tagged_files(gost_tagged)
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 tops = [1, 5, 10, 15, 0]
 
 error_dict={}
 for top in tops:
     error_dict[top] = show_results(top)
-=======
-"""
-# Top 10 most predicted GO_ids
-# total count = 7997
-# Unique GO_ids = 1167
-
-#Good for the analysis!
-#total
-#Out[57]: dict_values([1])
-#
-#for GO, C in craft_dict.items():
-#    total = sum(C.values())    
-#    
-#
-#total
-#Out[59]: 1
-#
-#total=0
-#for GO, C in craft_dict.items():
-#    total += sum(C.values())  
-#    
-#
-#total
-#Out[61]: 12962
-#
-#sum([sum(C.values()) for GO, C in craft_dict.items()])
-#Out[62]: 12962
-----------------
-[('GO:0010467', 3704),
- ('GO:0065007', 823),
- ('GO:0007608', 462),
- ('GO:0007567', 425),
- ('GO:0009294', 275),
- ('GO:0016265', 210),
- ('GO:0008283', 209),
- ('GO:0006915', 176),
- ('GO:0009790', 150),
- ('GO:0007613', 141),
- ('GO:0007565', 136),
- ('GO:0008380', 135),
- ('GO:0000239', 129),
- ('GO:0007126', 127),
- ('GO:0007618', 120),
- ('GO:0008152', 118),
- ('GO:0007067', 117),
- ('GO:0007612', 108),
- ('GO:0030154', 100),
- ('GO:0006281', 97)]
-"""
->>>>>>> 2b124873d1bdd791e8297a739e012c9f309cfc0d
