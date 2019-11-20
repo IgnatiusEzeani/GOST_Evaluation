@@ -96,7 +96,8 @@ def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_defau
                     pred.extend([go_id]*count)
                 else:
                     pred.extend([default_goid]*count)
-                    errors.append((phrase, go_id, default_goid, count))
+                    if go_id!=default_goid:
+                        errors.append((phrase, go_id, default_goid, count))
         else:
             for phrase, count in concepts.items():
                 gold.extend([go_id]*count)
@@ -106,17 +107,18 @@ def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_defau
                 if go_id in set(gost_go_ids): pred.extend([go_id]*count)
                 else:
                     pred.extend([default_goid]*count)
-                    errors.append((phrase, go_id, default_goid, count))
+                    if go_id!=default_goid:
+                        errors.append((phrase, go_id, default_goid, count))
     return gold, pred, errors
 
 def show_stats(craft_dict):
-#    plt.plot([1, 2, 3, 4])
-#    plt.ylabel('some numbers')
-#    plt.show()
+    # Finish this later
     pass
 
 def show_results(top):
     golds, preds, errors = evaluate(craft_dict, gost_dict, top)
+    print(len(golds), len(preds), sum([(g!=p)*c for _,g,p,c in errors]),
+          (len(golds) -sum([(g!=p)*c for _,g,p,c in errors]))/len(golds))
     print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
     print(f"{'Precision:':>10s} {precision_score(golds, preds, average='macro')*100:.2f}%")
     print(f"{'Recall:':>10s} {recall_score(golds, preds, average='macro')*100:.2f}%")
