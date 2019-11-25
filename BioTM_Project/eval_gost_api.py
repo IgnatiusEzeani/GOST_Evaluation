@@ -78,7 +78,7 @@ def read_tagged_files(folder, file_type='gost'):
     return tag_dict
 
 def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_default=False):
-    print(f"\n{'-'*5} Top {top if top else 'All' } {'-'*5}")
+#    print(f"\nbegin:{'-'*5} Top {top if top else 'All' } {'-'*5}")
     gold, pred, errors = [],[], []
     for go_id, concepts in craft_dict.items():
         gost_go_ids = []
@@ -91,6 +91,8 @@ def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_defau
                 
                 if len(gost_go_ids)>1: zipped = list(zip(gost_go_ids[0], gost_go_ids[1]))[:top]
                 else: zipped = gost_go_ids
+                
+                if default_goid == 'GO:0000000': default_goid=zipped[0][0]
                     
                 if any(go_id in l for l in zipped):
                     pred.extend([go_id]*count)
@@ -104,26 +106,29 @@ def evaluate(craft_dict, gost_dict, top=0, default_goid = 'GO:0010467', no_defau
                 for word in phrase.split():
                     if word in gost_dict:
                         gost_go_ids.extend(gost_dict[word])
+                if default_goid == 'GO:0000000': default_goid=gost_go_ids[0][0]
                 if go_id in set(gost_go_ids): pred.extend([go_id]*count)
                 else:
                     pred.extend([default_goid]*count)
                     if go_id!=default_goid:
                         errors.append((phrase, go_id, default_goid, count))
+#    print(f"end:{'-'*5} Top {top if top else 'All' } {'-'*5}")
     return gold, pred, errors
 
 def show_stats(craft_dict):
     # Finish this later
     pass
 
-def show_results(top):
-    golds, preds, errors = evaluate(craft_dict, gost_dict, top)
-    print(len(golds), len(preds), sum([(g!=p)*c for _,g,p,c in errors]),
-          (len(golds) -sum([(g!=p)*c for _,g,p,c in errors]))/len(golds))
-    print(f"{'Accuracy:':>10s} {accuracy_score(golds, preds)*100:.2f}%")
-    print(f"{'Precision:':>10s} {precision_score(golds, preds, average='macro')*100:.2f}%")
-    print(f"{'Recall:':>10s} {recall_score(golds, preds, average='macro')*100:.2f}%")
-    print(f"{'F1:':>10s} {f1_score(golds, preds, average='macro')*100:.2f}%")
+def show_results(top, dg):
+    golds, preds, errors = evaluate(craft_dict, gost_dict, top, default_goid=dg)
+#    total = sum([(g!=p)*c for _,g,p,c in errors])
+#    print(len(golds), len(preds), total, len(golds)-total/len(golds))
+    print(f"Top {str(top) if top else 'All':3s} & {accuracy_score(golds, preds)*100:.2f}", end=' & ')
+    print(f"{precision_score(golds, preds, average='macro')*100:.2f}", end=' & ')
+    print(f"{recall_score(golds, preds,  average='macro')*100:.2f}", end=' & ')    
+    print(f"{f1_score(golds, preds, average='macro')*100:.2f}\\")
     return errors
+
 craft_xml = "craft_GO_BP_knowtator"
 craft_tagged = "craft_tagged"
 craft_untagged = "craft_untagged"
@@ -138,9 +143,51 @@ api_url = "http://ucrel-api.lancaster.ac.uk/cgi-bin/gost.pl"
 craft_dict = read_tagged_files(craft_tagged, 'craft')
 gost_dict = read_tagged_files(gost_tagged)
 
-#<<<<<<< HEAD
+default_goids = [
+        ('GO:0000000', 'first goid'),
+        ('GO:0008150', 'most gost'),
+        ('GO:0010467','most craft')
+        ]
+
 tops = [1, 5, 10, 15, 0]
 
-error_dict={}
-for top in tops:
-    error_dict[top] = show_results(top)
+for dg, desc in default_goids:
+    print(f"{'='*5} {dg}_{desc} {'='*5}")
+    
+    error_dict={}
+    for top in tops:
+        error_dict[top] = show_results(top, dg)
+    
+"""
+\hline
+GO:0000000_first goid
+\hline
+\textit{Top 1} & 51.54 & 12.40 & 12.48 & 12.42 \\
+\textit{Top 5} & 62.03 & 30.85 & 30.93 & 30.87 \\
+\textit{Top 10} & 67.84 & 40.43 & 40.50 & 40.45 \\
+\textit{Top 15} & 68.73 & 42.65 & 42.72 & 42.67 \\
+\textit{Top ALL} & 81.04 & 61.80 & 61.86 & 61.82 \\
+\hline
+
+c.most_common(10)
+[('GO:0008150', 1041),
+ ('GO:0009987', 362),
+ ('GO:0044699', 334),
+ ('GO:0008152', 260),
+ ('GO:0032502', 203),
+ ('GO:0071704', 162),
+ ('GO:0044237', 149),
+ ('GO:0051179', 137),
+ ('GO:0044763', 133),
+ ('GO:0044767', 116),
+ ('GO:0065007', 114),
+ ('GO:0048856', 97),
+ ('GO:0051234', 92),
+ ('GO:0006807', 86),
+ ('GO:0050789', 85),
+ ('GO:0044238', 83),
+ ('GO:0032501', 79),
+ ('GO:0071840', 78),
+ ('GO:0043170', 76),
+ ('GO:0016043', 76)]
+"""
